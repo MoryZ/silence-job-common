@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.old.silence</groupId>
+        <artifactId>silence-job-center</artifactId>
+        <version>1.8.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>silence-job-common</artifactId>
+    <name>silence-job-common</name>
+    <packaging>pom</packaging>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+    </properties>
+
+    <modules>
+        <!-- Phase 1: New modules for refactoring -->
+        <module>silence-job-common-enum</module>
+        <module>silence-job-common-constant</module>
+        <module>silence-job-common-model</module>
+        <module>silence-job-common-util</module>
+        
+        <!-- Original modules -->
+        <module>silence-job-common-client-api</module>
+        <module>silence-job-common-core</module>
+        <module>silence-job-common-log</module>
+        <module>silence-job-common-server-api</module>
+    </modules>
+
+</project>
