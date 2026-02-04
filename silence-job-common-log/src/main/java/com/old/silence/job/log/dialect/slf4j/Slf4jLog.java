@@ -1,5 +1,7 @@
 package com.old.silence.job.log.dialect.slf4j;
 
+import cn.hutool.core.util.StrUtil;
+
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -7,8 +9,6 @@ import org.slf4j.MDC;
 import org.slf4j.spi.LocationAwareLogger;
 import com.old.silence.job.log.constant.LogFieldConstants;
 import com.old.silence.job.log.dialect.AbstractLog;
-
-import cn.hutool.core.util.StrUtil;
 import static com.old.silence.job.log.factory.LogFactory.extractThrowable;
 
 
@@ -41,6 +41,16 @@ public class Slf4jLog extends AbstractLog {
         this(LoggerFactory.getLogger(name));
     }
 
+    /**
+     * 获取Slf4j Logger对象
+     *
+     * @param clazz 打印日志所在类，当为{@code null}时使用“null”表示
+     * @return {@link Logger}
+     */
+    private static Logger getSlf4jLogger(Class<?> clazz) {
+        return (null == clazz) ? LoggerFactory.getLogger(StringUtils.EMPTY) : LoggerFactory.getLogger(clazz);
+    }
+
     @Override
     public String getName() {
         return logger.getName();
@@ -51,7 +61,6 @@ public class Slf4jLog extends AbstractLog {
     public boolean isTraceEnabled() {
         return logger.isTraceEnabled();
     }
-
 
     @Override
     public void trace(Boolean remote, String fqcn, String format, Object... arguments) {
@@ -133,7 +142,6 @@ public class Slf4jLog extends AbstractLog {
         return logger.isErrorEnabled();
     }
 
-
     @Override
     public void error(Boolean remote, String fqcn, String format, Object... arguments) {
         if (isErrorEnabled()) {
@@ -148,6 +156,7 @@ public class Slf4jLog extends AbstractLog {
         }
     }
 
+    // -------------------------------------------------------------------------------------------------- Private method
 
     // ------------------------------------------------------------------------- Log
     @Override
@@ -175,8 +184,6 @@ public class Slf4jLog extends AbstractLog {
         }
     }
 
-    // -------------------------------------------------------------------------------------------------- Private method
-
     /**
      * 打印日志<br> 此方法用于兼容底层日志实现，通过传入当前包装类名，以解决打印日志中行号错误问题
      *
@@ -192,16 +199,6 @@ public class Slf4jLog extends AbstractLog {
         // ((LocationAwareLogger)this.logger).log(null, fqcn, level_int, msgTemplate, arguments, t);
         // 由于slf4j-log4j12中此方法的实现存在bug，故在此拼接参数
         logger.log(null, fqcn, level_int, msgTemplate, arguments, t);
-    }
-
-    /**
-     * 获取Slf4j Logger对象
-     *
-     * @param clazz 打印日志所在类，当为{@code null}时使用“null”表示
-     * @return {@link Logger}
-     */
-    private static Logger getSlf4jLogger(Class<?> clazz) {
-        return (null == clazz) ? LoggerFactory.getLogger(StringUtils.EMPTY) : LoggerFactory.getLogger(clazz);
     }
 
     /**

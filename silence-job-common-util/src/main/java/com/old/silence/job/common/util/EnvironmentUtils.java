@@ -1,10 +1,9 @@
 package com.old.silence.job.common.util;
 
-import com.old.silence.job.common.context.SilenceSpringContext;
-
 import java.util.Objects;
 
 import org.springframework.core.env.Environment;
+import com.old.silence.job.common.context.SilenceSpringContext;
 
 /**
  * 获取环境信息

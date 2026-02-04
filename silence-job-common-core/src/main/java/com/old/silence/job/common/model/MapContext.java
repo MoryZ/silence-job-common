@@ -1,9 +1,7 @@
 package com.old.silence.job.common.model;
 
 
-
 import java.util.List;
-
 
 
 public final class MapContext {

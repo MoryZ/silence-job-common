@@ -1,12 +1,11 @@
 package com.old.silence.job.common.dto;
 
 
-
-import com.old.silence.job.log.dto.TaskLogFieldDTO;
-
 import java.io.Serializable;
 import java.math.BigInteger;
 import java.util.List;
+
+import com.old.silence.job.log.dto.TaskLogFieldDTO;
 
 /**
  * 日志上报DTO

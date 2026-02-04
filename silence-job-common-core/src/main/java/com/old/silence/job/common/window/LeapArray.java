@@ -390,7 +390,7 @@ public abstract class LeapArray<T> {
     public void debug(long time) {
         StringBuilder sb = new StringBuilder();
         List<WindowWrap<T>> lists = list(time);
-        sb.append("Thread_").append(Thread.currentThread().getId()).append("_");
+        sb.append("Thread_").append(Thread.currentThread().threadId()).append("_");
         for (WindowWrap<T> window : lists) {
             sb.append(window.windowStart()).append(":").append(window.value().toString());
         }

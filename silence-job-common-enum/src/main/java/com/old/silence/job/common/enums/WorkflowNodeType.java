@@ -23,6 +23,7 @@ public enum WorkflowNodeType implements DescribedEnumValue<Byte> {
         this.value = (byte) value;
         this.description = description;
     }
+
     @Override
     public Byte getValue() {
         return value;

@@ -9,7 +9,7 @@ import cn.hutool.core.util.StrUtil;
  *
  */
 public class MailException extends RuntimeException {
-    
+
     private static final long serialVersionUID = 8247610319171014183L;
 
     public MailException(Throwable e) {

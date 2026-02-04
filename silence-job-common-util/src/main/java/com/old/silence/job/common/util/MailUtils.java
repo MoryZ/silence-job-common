@@ -2,16 +2,10 @@ package com.old.silence.job.common.util;
 
 
 import cn.hutool.core.io.IoUtil;
-import cn.hutool.core.map.MapUtil;
 import cn.hutool.core.util.CharUtil;
 import cn.hutool.core.util.StrUtil;
 import jakarta.mail.Authenticator;
 import jakarta.mail.Session;
-
-import com.old.silence.core.util.CollectionUtils;
-import com.old.silence.job.common.alarm.email.Mail;
-import com.old.silence.job.common.alarm.email.MailAccount;
-import com.old.silence.job.common.alarm.email.UserPassAuthenticator;
 
 import java.io.File;
 import java.io.InputStream;
@@ -19,6 +13,11 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+
+import com.old.silence.core.util.CollectionUtils;
+import com.old.silence.job.common.alarm.email.Mail;
+import com.old.silence.job.common.alarm.email.MailAccount;
+import com.old.silence.job.common.alarm.email.UserPassAuthenticator;
 
 
 /**
@@ -438,7 +437,7 @@ public class MailUtils {
         mail.setFiles(files);
 
         // 图片
-        if (MapUtil.isNotEmpty(imageMap)) {
+        if (CollectionUtils.isNotEmpty(imageMap)) {
             for (Map.Entry<String, InputStream> entry : imageMap.entrySet()) {
                 mail.addImage(entry.getKey(), entry.getValue());
                 // 关闭流

@@ -1,9 +1,9 @@
 package com.old.silence.job.common.model;
 
 
-import com.alibaba.fastjson2.JSON;
-
 import java.util.concurrent.atomic.AtomicLong;
+
+import com.alibaba.fastjson2.JSON;
 
 
 public class SilenceJobRequest {
@@ -19,11 +19,11 @@ public class SilenceJobRequest {
         this.reqId = newId();
     }
 
-    private static long newId() {
-        return REQUEST_ID.getAndIncrement();
+    public SilenceJobRequest() {
     }
 
-    public SilenceJobRequest() {
+    private static long newId() {
+        return REQUEST_ID.getAndIncrement();
     }
 
     @Override

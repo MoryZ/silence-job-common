@@ -1,0 +1,8 @@
+com/old/silence/job/common/server/dto/RetryLogTaskDTO.class
+com/old/silence/job/common/server/dto/RetryTaskDTO.class
+com/old/silence/job/common/server/dto/ConfigDTO$Notify$Recipient.class
+com/old/silence/job/common/server/dto/ConfigDTO$Notify.class
+com/old/silence/job/common/server/dto/JobLogTaskDTO.class
+com/old/silence/job/common/server/dto/ConfigDTO.class
+com/old/silence/job/common/server/dto/ConfigDTO$Scene.class
+com/old/silence/job/common/server/dto/CallbackParamsDTO.class

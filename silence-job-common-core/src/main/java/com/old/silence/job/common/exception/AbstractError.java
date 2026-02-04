@@ -1,9 +1,6 @@
 package com.old.silence.job.common.exception;
 
 
-
-
-
 public abstract class AbstractError {
 
     public static final AbstractError SUCCESS = new AbstractError("操作成功", "success") {

@@ -1,7 +1,6 @@
 package com.old.silence.job.common.alarm.attribute;
 
 
-
 import java.util.List;
 
 /**

@@ -1,14 +1,14 @@
 package com.old.silence.job.log.dialect.jdk;
 
-import com.old.silence.job.log.dialect.AbstractLog;
+import cn.hutool.core.util.StrUtil;
 
 import java.util.logging.Level;
+import static java.util.logging.Level.INFO;
 import java.util.logging.LogRecord;
 import java.util.logging.Logger;
 
-import cn.hutool.core.util.StrUtil;
+import com.old.silence.job.log.dialect.AbstractLog;
 import static com.old.silence.job.log.factory.LogFactory.extractThrowable;
-import static java.util.logging.Level.INFO;
 
 
 /**
@@ -33,6 +33,33 @@ public class JdkLog extends AbstractLog {
 
     public JdkLog(String name) {
         this(Logger.getLogger(name));
+    }
+
+    /**
+     * 传入调用日志类的信息
+     *
+     * @param callerFQCN 调用者全限定类名
+     * @param record     The record to update
+     */
+    private static void fillCallerData(String callerFQCN, LogRecord record) {
+        StackTraceElement[] steArray = Thread.currentThread().getStackTrace();
+
+        int found = -1;
+        String className;
+        for (int i = steArray.length - 2; i > -1; i--) {
+            // 此处初始值为length-2，表示从倒数第二个堆栈开始检查，如果是倒数第一个，那调用者就获取不到
+            className = steArray[i].getClassName();
+            if (callerFQCN.equals(className)) {
+                found = i;
+                break;
+            }
+        }
+
+        if (found > -1) {
+            StackTraceElement ste = steArray[found + 1];
+            record.setSourceClassName(ste.getClassName());
+            record.setSourceMethodName(ste.getMethodName());
+        }
     }
 
     @Override
@@ -95,6 +122,8 @@ public class JdkLog extends AbstractLog {
         logIfEnabled(Level.SEVERE, fqcn, format, arguments);
     }
 
+    // ------------------------------------------------------------------------- Private method
+
     // ------------------------------------------------------------------------- Log
     @Override
     public void log(com.old.silence.job.log.level.Level level, Boolean remote, String fqcn, String format,
@@ -122,8 +151,6 @@ public class JdkLog extends AbstractLog {
         logIfEnabled(jdkLevel, fqcn, format, arguments);
     }
 
-    // ------------------------------------------------------------------------- Private method
-
     /**
      * 打印对应等级的日志
      *
@@ -139,33 +166,6 @@ public class JdkLog extends AbstractLog {
             record.setThrown(extractThrowable(arguments));
             fillCallerData(callerFQCN, record);
             logger.log(record);
-        }
-    }
-
-    /**
-     * 传入调用日志类的信息
-     *
-     * @param callerFQCN 调用者全限定类名
-     * @param record     The record to update
-     */
-    private static void fillCallerData(String callerFQCN, LogRecord record) {
-        StackTraceElement[] steArray = Thread.currentThread().getStackTrace();
-
-        int found = -1;
-        String className;
-        for (int i = steArray.length - 2; i > -1; i--) {
-            // 此处初始值为length-2，表示从倒数第二个堆栈开始检查，如果是倒数第一个，那调用者就获取不到
-            className = steArray[i].getClassName();
-            if (callerFQCN.equals(className)) {
-                found = i;
-                break;
-            }
-        }
-
-        if (found > -1) {
-            StackTraceElement ste = steArray[found + 1];
-            record.setSourceClassName(ste.getClassName());
-            record.setSourceMethodName(ste.getMethodName());
         }
     }
 }

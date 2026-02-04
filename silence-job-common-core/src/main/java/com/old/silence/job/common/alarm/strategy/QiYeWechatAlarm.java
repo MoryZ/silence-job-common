@@ -1,11 +1,15 @@
 package com.old.silence.job.common.alarm.strategy;
 
-import cn.hutool.core.map.MapUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.http.ContentType;
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
 import cn.hutool.http.HttpUtil;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -15,9 +19,6 @@ import com.old.silence.job.common.alarm.attribute.QiYeWechatAttribute;
 import com.old.silence.job.common.enums.NotifyType;
 import com.old.silence.job.common.util.DingDingUtils;
 import com.old.silence.job.log.SilenceJobLog;
-
-import java.util.List;
-import java.util.Map;
 
 
 /**
@@ -45,7 +46,7 @@ public class QiYeWechatAlarm extends AbstractAlarm<AlarmContext> {
                 log.error("请先配置微信机器人 webhookUrl");
                 return false;
             }
-            Map<String, Object> map = MapUtil.newHashMap();
+            Map<String, Object> map = new HashMap<>();
             QiYeWechatMessageContent messageContent = new QiYeWechatMessageContent();
             messageContent.setContent(StrUtil.sub(DingDingUtils.getAtText(qiYeWechatAttribute.getAts(), context.getText(), AT_LABEL), 0, 4096));
             map.put("msgtype", "markdown");

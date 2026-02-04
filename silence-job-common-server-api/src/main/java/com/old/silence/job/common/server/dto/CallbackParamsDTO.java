@@ -1,7 +1,6 @@
 package com.old.silence.job.common.server.dto;
 
 
-
 /**
  * 工作流回调节点参数模型
  *

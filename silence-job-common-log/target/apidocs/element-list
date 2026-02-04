@@ -1,0 +1,14 @@
+com.old.silence.job.log
+com.old.silence.job.log.constant
+com.old.silence.job.log.dialect
+com.old.silence.job.log.dialect.console
+com.old.silence.job.log.dialect.jdk
+com.old.silence.job.log.dialect.log4j
+com.old.silence.job.log.dialect.log4j2
+com.old.silence.job.log.dialect.slf4j
+com.old.silence.job.log.dto
+com.old.silence.job.log.enums
+com.old.silence.job.log.factory
+com.old.silence.job.log.lang
+com.old.silence.job.log.level
+com.old.silence.job.log.strategy

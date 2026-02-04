@@ -1,10 +1,9 @@
 package com.old.silence.job.common.client.dto.request;
 
 
+import java.math.BigInteger;
 
 import com.old.silence.job.common.enums.RetryTaskStatus;
-
-import java.math.BigInteger;
 
 
 public class DispatchCallbackResultRequest {

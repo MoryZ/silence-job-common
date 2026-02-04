@@ -1,13 +1,12 @@
 package com.old.silence.job.log.dialect.jdk;
 
 
-
-import com.old.silence.job.log.dialect.Log;
-import com.old.silence.job.log.factory.LogFactory;
-import com.old.silence.job.log.dialect.console.Console;
-
 import java.io.InputStream;
 import java.util.logging.LogManager;
+
+import com.old.silence.job.log.dialect.Log;
+import com.old.silence.job.log.dialect.console.Console;
+import com.old.silence.job.log.factory.LogFactory;
 
 /**
  * JDK日志工厂类
@@ -37,7 +36,7 @@ public class JdkLogFactory extends LogFactory {
      */
     private void readConfig() {
         //避免循环引用，Log初始化的时候不使用相关工具类
-        try(InputStream in = this.getClass().getClassLoader().getResourceAsStream("logging.properties")) {
+        try (InputStream in = this.getClass().getClassLoader().getResourceAsStream("logging.properties")) {
             LogManager.getLogManager().readConfiguration(in);
         } catch (Exception e) {
             Console.error(e, "Read [logging.properties] from classpath error!");

@@ -12,6 +12,10 @@ public class AlarmContext {
 
     private String notifyAttribute;
 
+    public static AlarmContext build() {
+        return new AlarmContext();
+    }
+
     public AlarmContext text(String pattern, Object... arguments) {
         this.text = MessageFormatter.arrayFormat(pattern, arguments).getMessage();
         return this;
@@ -35,10 +39,6 @@ public class AlarmContext {
     public AlarmContext title(String title) {
         this.title = title;
         return this;
-    }
-
-    public static AlarmContext build() {
-        return new AlarmContext();
     }
 
     public String getText() {

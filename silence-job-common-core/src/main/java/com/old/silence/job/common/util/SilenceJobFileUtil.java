@@ -8,7 +8,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
-import java.net.URL;
+import java.net.URI;
 
 import com.old.silence.job.common.exception.SilenceJobInnerExecutorException;
 
@@ -24,8 +24,7 @@ public class SilenceJobFileUtil {
      * @throws IOException 如果发生 IO 错误
      */
     public static void downloadFile(String urlString, File destinationFile, int connectionTimeout, int readTimeout) throws IOException {
-        URL url = new URL(urlString);
-        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+        HttpURLConnection connection = (HttpURLConnection) URI.create(urlString).toURL().openConnection();
         connection.setConnectTimeout(connectionTimeout);
         connection.setReadTimeout(readTimeout);
 

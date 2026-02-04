@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/silence-job-common-client-api/silence-job-common-client-api.iml" filepath="$PROJECT_DIR$/silence-job-common-client-api/silence-job-common-client-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/silence-job-common-constant/silence-job-common-constant.iml" filepath="$PROJECT_DIR$/silence-job-common-constant/silence-job-common-constant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/silence-job-common-core/silence-job-common-core.iml" filepath="$PROJECT_DIR$/silence-job-common-core/silence-job-common-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/silence-job-common-enum/silence-job-common-enum.iml" filepath="$PROJECT_DIR$/silence-job-common-enum/silence-job-common-enum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/silence-job-common-log/silence-job-common-log.iml" filepath="$PROJECT_DIR$/silence-job-common-log/silence-job-common-log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/silence-job-common-model/silence-job-common-model.iml" filepath="$PROJECT_DIR$/silence-job-common-model/silence-job-common-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/silence-job-common-server-api/silence-job-common-server-api.iml" filepath="$PROJECT_DIR$/silence-job-common-server-api/silence-job-common-server-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/silence-job-common-util/silence-job-common-util.iml" filepath="$PROJECT_DIR$/silence-job-common-util/silence-job-common-util.iml" />
+    </modules>
+  </component>
+</project>

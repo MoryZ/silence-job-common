@@ -7,7 +7,6 @@ import jakarta.mail.PasswordAuthentication;
 /**
  * 用户名密码验证器
  *
-
  */
 public class UserPassAuthenticator extends Authenticator {
 

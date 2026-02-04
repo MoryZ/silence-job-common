@@ -1,13 +1,13 @@
 package com.old.silence.job.log.dialect.slf4j;
 
+import java.io.OutputStream;
+import java.io.PrintStream;
+import java.io.UnsupportedEncodingException;
+
 import org.slf4j.LoggerFactory;
 import org.slf4j.helpers.NOPLoggerFactory;
 import com.old.silence.job.log.dialect.Log;
 import com.old.silence.job.log.factory.LogFactory;
-
-import java.io.OutputStream;
-import java.io.PrintStream;
-import java.io.UnsupportedEncodingException;
 
 /**
  * <a href="http://www.slf4j.org/">SLF4J</a> log.<br>

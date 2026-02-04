@@ -24,8 +24,7 @@ public enum RetryNotifyScene implements DescribedEnumValue<Byte> {
 
     RETRY_TASK_ENTER_DEAD_LETTER(6, "任务重试失败进入死信队列", NodeType.SERVER),
 
-    RETRY_NO_CLIENT_NODES_ERROR(7, "任务重试失败（没有可执行的客户端节点）", NodeType.SERVER)
-    ;
+    RETRY_NO_CLIENT_NODES_ERROR(7, "任务重试失败（没有可执行的客户端节点）", NodeType.SERVER);
 
     /**
      * 通知场景

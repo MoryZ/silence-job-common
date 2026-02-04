@@ -12,8 +12,9 @@ import com.old.silence.job.log.dialect.slf4j.Slf4jLogFactory;
  */
 public class GlobalLogFactory {
 
-    private static volatile LogFactory currentLogFactory;
     private static final Object lock = new Object();
+    private static volatile LogFactory currentLogFactory;
+
     /**
      * 获取单例日志工厂类，如果不存在创建之
      *

@@ -3,6 +3,7 @@ package com.old.silence.job.common.enums;
 /**
  * @author moryzang
  */
+
 /**
  * id生成模式
  *

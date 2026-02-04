@@ -1,7 +1,6 @@
 package com.old.silence.job.common.server.dto;
 
 
-
 import java.io.Serializable;
 
 /**

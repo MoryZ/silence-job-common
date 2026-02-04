@@ -1,10 +1,10 @@
 package com.old.silence.job.common.enums;
 
-import com.old.silence.core.enums.EnumValue;
-
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+
+import com.old.silence.core.enums.EnumValue;
 
 
 public enum JobTaskStatus implements EnumValue<Byte> {
@@ -35,17 +35,14 @@ public enum JobTaskStatus implements EnumValue<Byte> {
     CANCEL(6),
     ;
 
+    public static final List<JobTaskStatus> NOT_COMPLETE = Collections.singletonList(RUNNING);
+    public static final List<JobTaskStatus> COMPLETED = Arrays.asList(SUCCESS, FAIL, STOP);
+    public static final List<JobTaskStatus> NOT_SUCCESS = Arrays.asList(FAIL, STOP);
     private final Byte value;
 
     JobTaskStatus(int value) {
         this.value = (byte) value;
     }
-
-    public static final List<JobTaskStatus> NOT_COMPLETE = Collections.singletonList(RUNNING);
-
-    public static final List<JobTaskStatus> COMPLETED = Arrays.asList(SUCCESS, FAIL, STOP);
-
-    public static final List<JobTaskStatus> NOT_SUCCESS = Arrays.asList(FAIL, STOP);
 
     @Override
     public Byte getValue() {

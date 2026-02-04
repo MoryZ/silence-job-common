@@ -30,6 +30,12 @@ public enum JobOperationReason implements DescribedEnumValue<Byte> {
 
     ;
 
+    /**
+     * 工作流后续节点跳过执行配置
+     */
+    public static final List<JobOperationReason> WORKFLOW_SUCCESSOR_SKIP_EXECUTION = List.of(
+            WORKFLOW_NODE_NO_REQUIRED, WORKFLOW_DECISION_FAILED,
+            WORKFLOW_CONDITION_NODE_EXECUTION_ERROR);
     private final Byte value;
     private final String description;
 
@@ -37,13 +43,6 @@ public enum JobOperationReason implements DescribedEnumValue<Byte> {
         this.value = (byte) value;
         this.description = description;
     }
-
-    /**
-     * 工作流后续节点跳过执行配置
-     */
-    public static final List<JobOperationReason> WORKFLOW_SUCCESSOR_SKIP_EXECUTION = List.of(
-            WORKFLOW_NODE_NO_REQUIRED, WORKFLOW_DECISION_FAILED,
-            WORKFLOW_CONDITION_NODE_EXECUTION_ERROR);
 
     public Byte getValue() {
         return value;

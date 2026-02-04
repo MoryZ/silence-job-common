@@ -1,21 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
     <parent>
         <groupId>com.old.silence</groupId>
-        <artifactId>silence-job-center</artifactId>
-        <version>1.8.0-SNAPSHOT</version>
+        <artifactId>platform-parent</artifactId>
+        <version>2.0.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>silence-job-common</artifactId>
+    <version>1.8.0-SNAPSHOT</version>
     <name>silence-job-common</name>
     <packaging>pom</packaging>
 
     <properties>
+        <revision>1.8.0-SNAPSHOT</revision>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- Spring Boot version -->
+        <spring-boot.version>3.2.0</spring-boot.version>
+
+        <!-- Other dependency versions -->
+        <grpc.version>1.60.0</grpc.version>
+        <grpc-java.version>1.60.0</grpc-java.version>
+        <protobuf.version>3.25.1</protobuf.version>
+        <protobuf-java.version>3.25.1</protobuf-java.version>
+        <netty.version>4.1.104.Final</netty.version>
+        <jackson.version>2.15.3</jackson.version>
+        <fastjson2.version>2.0.43</fastjson2.version>
+        <hutool.version>5.8.24</hutool.version>
+        <aviator.version>5.3.3</aviator.version>
+        <qlexpress.version>3.3.1</qlexpress.version>
+        <jakarta-validation.version>3.0.2</jakarta-validation.version>
+        <jakarta-mail.version>2.1.2</jakarta-mail.version>
+        <angus-mail.version>2.0.2</angus-mail.version>
+        <commons-lang3.version>3.14.0</commons-lang3.version>
     </properties>
 
     <modules>
@@ -24,12 +47,178 @@
         <module>silence-job-common-constant</module>
         <module>silence-job-common-model</module>
         <module>silence-job-common-util</module>
-        
+
         <!-- Original modules -->
         <module>silence-job-common-client-api</module>
         <module>silence-job-common-core</module>
         <module>silence-job-common-log</module>
         <module>silence-job-common-server-api</module>
     </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Spring Boot BOM -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- Internal modules -->
+            <dependency>
+                <groupId>com.old.silence</groupId>
+                <artifactId>silence-job-common-enum</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.old.silence</groupId>
+                <artifactId>silence-job-common-constant</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.old.silence</groupId>
+                <artifactId>silence-job-common-model</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.old.silence</groupId>
+                <artifactId>silence-job-common-util</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.old.silence</groupId>
+                <artifactId>silence-job-common-core</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.old.silence</groupId>
+                <artifactId>silence-job-common-log</artifactId>
+                <version>${revision}</version>
+            </dependency>
+
+            <!-- gRPC & Protobuf -->
+            <dependency>
+                <groupId>io.grpc</groupId>
+                <artifactId>grpc-bom</artifactId>
+                <version>${grpc.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protobuf-java</artifactId>
+                <version>${protobuf.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.api.grpc</groupId>
+                <artifactId>proto-google-common-protos</artifactId>
+                <version>2.29.0</version>
+            </dependency>
+
+            <!-- Netty -->
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-bom</artifactId>
+                <version>${netty.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- Jackson -->
+            <dependency>
+                <groupId>com.fasterxml.jackson</groupId>
+                <artifactId>jackson-bom</artifactId>
+                <version>${jackson.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- FastJson2 -->
+            <dependency>
+                <groupId>com.alibaba.fastjson2</groupId>
+                <artifactId>fastjson2</artifactId>
+                <version>${fastjson2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.fastjson2</groupId>
+                <artifactId>fastjson2-extension</artifactId>
+                <version>${fastjson2.version}</version>
+            </dependency>
+
+            <!-- Hutool -->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-core</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-http</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+
+            <!-- Expression Engines -->
+            <dependency>
+                <groupId>com.googlecode.aviator</groupId>
+                <artifactId>aviator</artifactId>
+                <version>${aviator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>QLExpress</artifactId>
+                <version>${qlexpress.version}</version>
+            </dependency>
+
+            <!-- Jakarta -->
+            <dependency>
+                <groupId>jakarta.validation</groupId>
+                <artifactId>jakarta.validation-api</artifactId>
+                <version>${jakarta-validation.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.mail</groupId>
+                <artifactId>jakarta.mail-api</artifactId>
+                <version>${jakarta-mail.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.angus</groupId>
+                <artifactId>jakarta.mail</artifactId>
+                <version>${angus-mail.version}</version>
+            </dependency>
+
+            <!-- Commons -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3.version}</version>
+            </dependency>
+
+            <!-- Guava -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>33.0.0-jre</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.11.0</version>
+                    <configuration>
+                        <source>${maven.compiler.source}</source>
+                        <target>${maven.compiler.target}</target>
+                        <encoding>UTF-8</encoding>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 
 </project>

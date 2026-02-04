@@ -1,7 +1,6 @@
 package com.old.silence.job.common.alarm.email;
 
 
-
 import cn.hutool.core.util.CharsetUtil;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;
@@ -40,7 +39,10 @@ public class MailAccount implements Serializable {
 
     // 其他
     private static final String MAIL_DEBUG = "mail.debug";
-
+    /**
+     * 自定义的其他属性，此自定义属性会覆盖默认属性
+     */
+    private final Map<String, Object> customProperty = new HashMap<>();
     /**
      * SMTP服务器域名
      */
@@ -65,7 +67,6 @@ public class MailAccount implements Serializable {
      * 发送方，遵循RFC-822标准
      */
     private String from;
-
     /**
      * 是否打开调试模式，调试模式会显示与邮件服务器通信过程，默认不开启
      */
@@ -82,7 +83,6 @@ public class MailAccount implements Serializable {
      * 对于文件名是否使用{@link #charset}编码，默认为 {@code true}
      */
     private boolean encodefilename = true;
-
     /**
      * 使用 STARTTLS安全连接，STARTTLS是对纯文本通信协议的扩展。它将纯文本连接升级为加密连接（TLS或SSL）， 而不是使用一个单独的加密通信端口。
      */
@@ -91,12 +91,10 @@ public class MailAccount implements Serializable {
      * 使用 SSL安全连接
      */
     private Boolean sslEnable;
-
     /**
      * SSL协议，多个协议用空格分隔
      */
     private String sslProtocols;
-
     /**
      * 指定实现javax.net.SocketFactory接口的类的名称,这个类将被用于创建SMTP的套接字
      */
@@ -109,7 +107,6 @@ public class MailAccount implements Serializable {
      * 指定的端口连接到在使用指定的套接字工厂。如果没有设置,将使用默认端口
      */
     private int socketFactoryPort = 465;
-
     /**
      * SMTP超时时长，单位毫秒，缺省值不超时
      */
@@ -122,11 +119,6 @@ public class MailAccount implements Serializable {
      * Socket写出超时值，单位毫秒，缺省值不超时
      */
     private long writeTimeout;
-
-    /**
-     * 自定义的其他属性，此自定义属性会覆盖默认属性
-     */
-    private final Map<String, Object> customProperty = new HashMap<>();
 
     // -------------------------------------------------------------- Constructor start
 

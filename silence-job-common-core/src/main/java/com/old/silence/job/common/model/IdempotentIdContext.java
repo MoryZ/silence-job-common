@@ -1,8 +1,6 @@
 package com.old.silence.job.common.model;
 
 
-
-
 /**
  * 幂等id上下文
  *

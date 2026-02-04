@@ -25,9 +25,6 @@ import jakarta.mail.internet.MimeMultipart;
 import jakarta.mail.internet.MimeUtility;
 import jakarta.mail.util.ByteArrayDataSource;
 
-import com.old.silence.job.common.util.MailUtils;
-
-
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -35,18 +32,24 @@ import java.io.PrintStream;
 import java.nio.charset.Charset;
 import java.util.Date;
 
+import com.old.silence.job.common.util.MailUtils;
+
 /**
  * 邮件发送客户端
  *
  */
 public class Mail implements Builder<MimeMessage> {
-    
+
     private static final long serialVersionUID = 1L;
 
     /**
      * 邮箱帐户信息以及一些客户端配置信息
      */
     private final MailAccount mailAccount;
+    /**
+     * 正文、附件和图片的混合部分
+     */
+    private final Multipart multipart = new MimeMultipart();
     /**
      * 收件人列表
      */
@@ -76,10 +79,6 @@ public class Mail implements Builder<MimeMessage> {
      */
     private boolean isHtml;
     /**
-     * 正文、附件和图片的混合部分
-     */
-    private final Multipart multipart = new MimeMultipart();
-    /**
      * 是否使用全局会话，默认为false
      */
     private boolean useGlobalSession = false;
@@ -90,19 +89,6 @@ public class Mail implements Builder<MimeMessage> {
     private PrintStream debugOutput;
 
     /**
-     * 创建邮件客户端
-     *
-     * @param mailAccount 邮件帐号
-     * @return Mail
-     */
-    public static Mail create(MailAccount mailAccount) {
-        return new Mail(mailAccount);
-    }
-
-
-    // --------------------------------------------------------------- Constructor start
-
-    /**
      * 构造
      *
      * @param mailAccount 邮件帐户
@@ -110,6 +96,19 @@ public class Mail implements Builder<MimeMessage> {
     public Mail(MailAccount mailAccount) {
         Assert.notNull(mailAccount, () -> new MailException("邮件账号不能为空"));
         this.mailAccount = mailAccount;
+    }
+
+
+    // --------------------------------------------------------------- Constructor start
+
+    /**
+     * 创建邮件客户端
+     *
+     * @param mailAccount 邮件帐号
+     * @return Mail
+     */
+    public static Mail create(MailAccount mailAccount) {
+        return new Mail(mailAccount);
     }
     // --------------------------------------------------------------- Constructor end
 

@@ -1,11 +1,10 @@
 package com.old.silence.job.common.client.dto.request;
 
+import java.math.BigInteger;
+
 import com.old.silence.job.common.client.dto.ExecuteResult;
 import com.old.silence.job.common.enums.JobTaskStatus;
 import com.old.silence.job.common.enums.JobTaskType;
-
-import java.math.BigInteger;
-
 
 
 public class DispatchJobResultRequest {

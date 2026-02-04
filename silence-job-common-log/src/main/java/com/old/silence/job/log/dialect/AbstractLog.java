@@ -2,9 +2,9 @@ package com.old.silence.job.log.dialect;
 
 import cn.hutool.core.util.StrUtil;
 
-import com.old.silence.job.log.level.Level;
-
 import java.io.Serializable;
+
+import com.old.silence.job.log.level.Level;
 
 /**
  * 抽象日志类<br> 实现了一些通用的接口

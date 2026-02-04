@@ -1,7 +1,19 @@
 package com.old.silence.job.common.util;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
+import cn.hutool.core.util.StrUtil;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -17,22 +29,9 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.SerializerProvider;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
-import com.old.silence.job.common.exception.SilenceJobCommonException;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-
-import cn.hutool.core.util.StrUtil;
 import static com.old.silence.job.common.constant.SystemConstants.YYYY_MM_DD;
 import static com.old.silence.job.common.constant.SystemConstants.YYYY_MM_DD_HH_MM_SS;
+import com.old.silence.job.common.exception.SilenceJobCommonException;
 
 /**
  * @author moryzang
@@ -63,7 +62,6 @@ public class JsonUtils {
     public static <T> T parseObject(InputStream inputStream, Class<T> clazz) {
         return JsonMapper.toJavaObject(inputStream, clazz);
     }
-
 
 
     /**
@@ -177,7 +175,7 @@ public class JsonUtils {
     /**
      * 判断 Json 是否为空
      */
-    public static boolean isEmptyJson(String json){
+    public static boolean isEmptyJson(String json) {
         try {
             JsonNode jsonNode = JsonMapper.objectMapper.readTree(json);
             return jsonNode.isEmpty();

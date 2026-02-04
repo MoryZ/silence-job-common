@@ -3,17 +3,18 @@ package com.old.silence.job.common.rpc;
 import io.netty.util.HashedWheelTimer;
 import io.netty.util.Timeout;
 import io.netty.util.TimerTask;
-import org.springframework.scheduling.concurrent.CustomizableThreadFactory;
-import com.old.silence.job.common.exception.SilenceJobRemotingTimeOutException;
-import com.old.silence.job.common.model.ApiResult;
-import com.old.silence.job.common.model.SilenceJobRpcResult;
-import com.old.silence.job.log.SilenceJobLog;
 
 import java.util.Objects;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.TimeUnit;
+
+import org.springframework.scheduling.concurrent.CustomizableThreadFactory;
+import com.old.silence.job.common.exception.SilenceJobRemotingTimeOutException;
+import com.old.silence.job.common.model.ApiResult;
+import com.old.silence.job.common.model.SilenceJobRpcResult;
+import com.old.silence.job.log.SilenceJobLog;
 
 /**
  * 处理RPC超时和回调
@@ -22,10 +23,8 @@ import java.util.concurrent.TimeUnit;
 
 public final class RpcContext {
 
-    private RpcContext() {
-    }
-
     private static final HashedWheelTimer WHEEL_TIMER;
+    private static final ConcurrentMap<Long, SilenceJobFuture> COMPLETABLE_FUTURE = new ConcurrentHashMap<>();
 
     static {
         WHEEL_TIMER = new HashedWheelTimer(
@@ -33,7 +32,8 @@ public final class RpcContext {
                 TimeUnit.SECONDS, 1024);
     }
 
-    private static final ConcurrentMap<Long, SilenceJobFuture> COMPLETABLE_FUTURE = new ConcurrentHashMap<>();
+    private RpcContext() {
+    }
 
     public static void invoke(long requestId, SilenceJobRpcResult silenceJobRpcResult, boolean timeout) {
 

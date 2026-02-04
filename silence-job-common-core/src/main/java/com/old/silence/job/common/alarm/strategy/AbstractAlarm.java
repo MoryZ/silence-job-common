@@ -1,12 +1,12 @@
 package com.old.silence.job.common.alarm.strategy;
 
-import org.springframework.beans.factory.InitializingBean;
-import com.old.silence.job.common.alarm.Alarm;
-import com.old.silence.job.common.alarm.SilenceJobAlarmFactory;
-
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
+
+import org.springframework.beans.factory.InitializingBean;
+import com.old.silence.job.common.alarm.Alarm;
+import com.old.silence.job.common.alarm.SilenceJobAlarmFactory;
 
 
 public abstract class AbstractAlarm<T> implements Alarm<T>, InitializingBean {

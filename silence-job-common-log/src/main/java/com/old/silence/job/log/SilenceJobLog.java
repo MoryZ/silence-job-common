@@ -1,5 +1,3 @@
-
-
 package com.old.silence.job.log;
 
 
@@ -11,10 +9,9 @@ import com.old.silence.job.log.strategy.Remote;
  *
  */
 public final class SilenceJobLog {
+    public static final Local LOCAL = new Local();
+    public static final Remote REMOTE = new Remote();
+
     private SilenceJobLog() {
     }
-
-    public static final Local LOCAL = new Local();
-
-    public static final Remote REMOTE = new Remote();
 }

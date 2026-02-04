@@ -25,8 +25,7 @@ public enum JobBlockStrategy implements EnumValue<Byte> {
      * 不创建新的批次, 重新执行当前的批次中已经失败的任务
      * (若是工作流。则是重新触发工作流节点)
      */
-    RECOVERY(4)
-    ;
+    RECOVERY(4);
 
     private final Byte value;
 

@@ -1,8 +1,8 @@
 package com.old.silence.job.common.alarm;
 
-import com.old.silence.job.common.enums.NotifyType;
-
 import java.util.List;
+
+import com.old.silence.job.common.enums.NotifyType;
 
 
 public interface Alarm<T> {

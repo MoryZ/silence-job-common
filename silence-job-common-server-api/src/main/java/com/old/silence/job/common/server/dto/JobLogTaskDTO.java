@@ -1,13 +1,10 @@
 package com.old.silence.job.common.server.dto;
 
 
-
-
 import java.math.BigInteger;
 
 
-
-public class JobLogTaskDTO extends LogTaskDTO {
+public class JobLogTaskDTO {
 
     /**
      * 任务信息id

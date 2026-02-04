@@ -23,16 +23,6 @@ public class SilenceSpringContext implements BeanFactoryPostProcessor, Applicati
 
     private static ApplicationContext CONTEXT;
 
-    @Override
-    public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) {
-        SilenceSpringContext.FACTORY = beanFactory;
-    }
-
-    @Override
-    public void setApplicationContext(ApplicationContext applicationContext) {
-        SilenceSpringContext.CONTEXT = applicationContext;
-    }
-
     public static ListableBeanFactory getBeanFactory() {
         ListableBeanFactory factory = null == FACTORY ? CONTEXT : FACTORY;
         if (null == factory) {
@@ -48,7 +38,6 @@ public class SilenceSpringContext implements BeanFactoryPostProcessor, Applicati
     public static <T> T getBeanByType(Class<T> clazz) {
         return getBeanFactory().getBean(clazz);
     }
-
 
     public static synchronized <T> T getBean(String name) {
         try {
@@ -75,6 +64,16 @@ public class SilenceSpringContext implements BeanFactoryPostProcessor, Applicati
             log.error(" BeanName:{} not exist，Exception => {}", name, exception.getMessage());
             return null;
         }
+    }
+
+    @Override
+    public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) {
+        SilenceSpringContext.FACTORY = beanFactory;
+    }
+
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) {
+        SilenceSpringContext.CONTEXT = applicationContext;
     }
 
 }

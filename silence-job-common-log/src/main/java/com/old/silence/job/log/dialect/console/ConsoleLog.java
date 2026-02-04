@@ -43,11 +43,6 @@ public class ConsoleLog extends AbstractLog {
         this.name = name;
     }
 
-    @Override
-    public String getName() {
-        return this.name;
-    }
-
     /**
      * 设置自定义的日志显示级别
      *
@@ -57,6 +52,11 @@ public class ConsoleLog extends AbstractLog {
     public static void setLevel(Level customLevel) {
         Assert.notNull(customLevel, "customLevel is not null");
         currentLevel = customLevel;
+    }
+
+    @Override
+    public String getName() {
+        return this.name;
     }
 
     //------------------------------------------------------------------------- Trace

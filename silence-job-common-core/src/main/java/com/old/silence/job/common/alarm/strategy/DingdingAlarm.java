@@ -1,13 +1,13 @@
 package com.old.silence.job.common.alarm.strategy;
 
+import java.util.List;
+
 import org.springframework.stereotype.Component;
 import com.alibaba.fastjson2.JSON;
 import com.old.silence.job.common.alarm.AlarmContext;
 import com.old.silence.job.common.alarm.attribute.DingDingAttribute;
 import com.old.silence.job.common.enums.NotifyType;
 import com.old.silence.job.common.util.DingDingUtils;
-
-import java.util.List;
 
 
 @Component

@@ -44,15 +44,6 @@ public class ConsoleColorLog extends ConsoleLog {
     });
 
     /**
-     * 设置颜色工厂，根据日志级别，定义不同的颜色
-     *
-     * @param colorFactory 颜色工厂函数
-     */
-    public static void setColorFactory(Function<Level, AnsiColor> colorFactory) {
-        ConsoleColorLog.colorFactory = colorFactory;
-    }
-
-    /**
      * 构造
      *
      * @param name 类名
@@ -68,6 +59,15 @@ public class ConsoleColorLog extends ConsoleLog {
      */
     public ConsoleColorLog(Class<?> clazz) {
         super(clazz);
+    }
+
+    /**
+     * 设置颜色工厂，根据日志级别，定义不同的颜色
+     *
+     * @param colorFactory 颜色工厂函数
+     */
+    public static void setColorFactory(Function<Level, AnsiColor> colorFactory) {
+        ConsoleColorLog.colorFactory = colorFactory;
     }
 
     @Override

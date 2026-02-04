@@ -5,6 +5,13 @@ import cn.hutool.http.ContentType;
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
 import cn.hutool.http.HttpUtil;
+
+import java.text.MessageFormat;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -17,20 +24,12 @@ import com.old.silence.job.common.constant.SystemConstants;
 import com.old.silence.job.common.enums.NotifyType;
 import com.old.silence.job.log.SilenceJobLog;
 
-import java.text.MessageFormat;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 /**
  * 飞书通知
  *
  */
 @Component
 public class LarkAlarm extends AbstractAlarm<AlarmContext> {
-
-
 
 
     public static final String AT_LABEL = "<at id={0}></at>";
@@ -97,6 +96,21 @@ public class LarkAlarm extends AbstractAlarm<AlarmContext> {
         return Boolean.TRUE;
     }
 
+    public String getAtText(String text, List<String> ats) {
+        if (CollectionUtils.isEmpty(ats)) {
+            return "";
+        }
+
+        StringBuilder sb = new StringBuilder(text);
+        if (ats.stream().map(String::toLowerCase).anyMatch(SystemConstants.AT_ALL::equals)) {
+            sb.append(MessageFormat.format(AT_LABEL, SystemConstants.AT_ALL));
+        } else {
+            ats.stream().filter(StrUtil::isNotBlank)
+                    .forEach(at -> sb.append(MessageFormat.format(AT_LABEL, at)));
+        }
+        return sb.toString();
+    }
+
     private static class LarkMessage {
 
         @JsonProperty("msg_type")
@@ -119,21 +133,6 @@ public class LarkAlarm extends AbstractAlarm<AlarmContext> {
         public void setCard(Map<String, Object> card) {
             this.card = card;
         }
-    }
-
-    public String getAtText(String text, List<String> ats) {
-        if (CollectionUtils.isEmpty(ats)) {
-            return "";
-        }
-
-        StringBuilder sb = new StringBuilder(text);
-        if (ats.stream().map(String::toLowerCase).anyMatch(SystemConstants.AT_ALL::equals)) {
-            sb.append(MessageFormat.format(AT_LABEL, SystemConstants.AT_ALL));
-        } else {
-            ats.stream().filter(StrUtil::isNotBlank)
-                    .forEach(at -> sb.append(MessageFormat.format(AT_LABEL, at)));
-        }
-        return sb.toString();
     }
 }
 

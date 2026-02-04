@@ -1,8 +1,6 @@
 package com.old.silence.job.common.exception;
 
 
-
-
 public class SilenceJobAuthenticationException extends BaseSilenceJobException {
     private final Integer errorCode = 5001;
 

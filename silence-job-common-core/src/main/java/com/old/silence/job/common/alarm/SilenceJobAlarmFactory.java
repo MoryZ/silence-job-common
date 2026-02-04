@@ -1,9 +1,9 @@
 package com.old.silence.job.common.alarm;
 
-import com.old.silence.job.common.enums.NotifyType;
-
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+
+import com.old.silence.job.common.enums.NotifyType;
 
 
 public class SilenceJobAlarmFactory {

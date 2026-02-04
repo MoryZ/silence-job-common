@@ -1,8 +1,8 @@
 package com.old.silence.job.common.enums;
 
-import com.old.silence.core.enums.EnumValue;
-
 import java.util.List;
+
+import com.old.silence.core.enums.EnumValue;
 
 /**
  * 重试状态终态枚举
@@ -30,15 +30,13 @@ public enum RetryStatus implements EnumValue<Byte> {
      */
     SUSPEND(3);
 
+    public static final List<RetryStatus> ALLOW_DELETE_STATUS =
+            List.of(RetryStatus.FINISH, RetryStatus.MAX_COUNT, RetryStatus.SUSPEND);
     private final Byte value;
 
     RetryStatus(int value) {
         this.value = (byte) value;
     }
-
-    public static final List<RetryStatus> ALLOW_DELETE_STATUS =
-            List.of(RetryStatus.FINISH, RetryStatus.MAX_COUNT, RetryStatus.SUSPEND);
-
 
     public Byte getValue() {
         return value;

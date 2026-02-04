@@ -4,8 +4,7 @@ package com.old.silence.job.common.server.dto;
 import java.math.BigInteger;
 
 
-
-public class RetryLogTaskDTO extends LogTaskDTO {
+public class RetryLogTaskDTO {
 
     private BigInteger retryTaskId;
 

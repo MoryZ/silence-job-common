@@ -2,6 +2,10 @@ package com.old.silence.job.common.alarm.strategy;
 
 import cn.hutool.core.util.ObjUtil;
 
+import java.util.List;
+import java.util.Objects;
+import java.util.Optional;
+
 import org.springframework.stereotype.Component;
 import com.alibaba.fastjson2.JSON;
 import com.old.silence.job.common.alarm.AlarmContext;
@@ -11,10 +15,6 @@ import com.old.silence.job.common.alarm.email.SilenceJobMailProperties;
 import com.old.silence.job.common.enums.NotifyType;
 import com.old.silence.job.common.util.MailUtils;
 import com.old.silence.job.log.SilenceJobLog;
-
-import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
 
 
 @Component

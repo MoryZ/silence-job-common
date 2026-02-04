@@ -1,19 +1,16 @@
 package com.old.silence.job.common.rpc;
 
 
-
-
-import com.old.silence.job.common.model.ApiResult;
-
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
+
+import com.old.silence.job.common.model.ApiResult;
 
 
 public class SilenceJobFuture<R extends ApiResult<Object>> extends CompletableFuture<R> {
     private final long requestId;
     private final long timeout;
     private final TimeUnit unit;
-
 
 
     public SilenceJobFuture(long requestId, long timeout, TimeUnit unit) {

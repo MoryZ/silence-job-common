@@ -1,12 +1,12 @@
 package com.old.silence.job.log.dialect.console;
 
 
-import java.util.Scanner;
-
 import cn.hutool.core.lang.Assert;
 import cn.hutool.core.lang.ConsoleTable;
+
 import static java.lang.System.err;
 import static java.lang.System.out;
+import java.util.Scanner;
 
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -226,7 +226,7 @@ public class Console {
         if (ArrayUtils.isEmpty(otherObjs)) {
             error(obj1);
         } else {
-            error(buildTemplateSplitBySpace(otherObjs.length + 1), ArrayUtils.insert(0,otherObjs, obj1));
+            error(buildTemplateSplitBySpace(otherObjs.length + 1), ArrayUtils.insert(0, otherObjs, obj1));
         }
     }
 

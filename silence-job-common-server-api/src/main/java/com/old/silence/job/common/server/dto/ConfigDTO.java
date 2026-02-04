@@ -1,12 +1,12 @@
 package com.old.silence.job.common.server.dto;
 
 
+import java.util.List;
+
 import com.old.silence.job.common.constant.SystemConstants;
 import com.old.silence.job.common.enums.JobNotifyScene;
 import com.old.silence.job.common.enums.NotifyType;
 import com.old.silence.job.common.enums.RetryNotifyScene;
-
-import java.util.List;
 
 /**
  * 同步的配置数据结构

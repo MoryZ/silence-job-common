@@ -1,7 +1,6 @@
 package com.old.silence.job.common.model;
 
 
-
 /**
  * 定时任务 sj_job_task的args_str对应的
  * 参数模型

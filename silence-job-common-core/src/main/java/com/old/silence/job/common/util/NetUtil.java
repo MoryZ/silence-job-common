@@ -1,7 +1,5 @@
 package com.old.silence.job.common.util;
 
-import com.old.silence.job.log.SilenceJobLog;
-
 import java.io.IOException;
 import java.net.Inet6Address;
 import java.net.InetAddress;
@@ -12,6 +10,8 @@ import java.util.Enumeration;
 import java.util.Optional;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import com.old.silence.job.log.SilenceJobLog;
 
 
 /**
