@@ -23,7 +23,11 @@ import com.old.silence.job.common.alarm.email.UserPassAuthenticator;
 /**
  * 邮件工具类
  */
-public class MailUtils {
+public final class MailUtils {
+
+    private MailUtils() {
+        throw new AssertionError();
+    }
 
     private static MailAccount account;
 

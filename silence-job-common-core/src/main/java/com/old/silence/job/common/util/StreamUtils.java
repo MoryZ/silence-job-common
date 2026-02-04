@@ -25,7 +25,11 @@ import com.old.silence.core.util.CollectionUtils;
  *
  * @author Lion Li
  */
-public class StreamUtils {
+public final class StreamUtils {
+
+    private StreamUtils() {
+        throw new AssertionError();
+    }
 
     public static final String SEPARATOR = ",";
 

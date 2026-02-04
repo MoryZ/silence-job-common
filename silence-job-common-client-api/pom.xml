@@ -33,11 +33,6 @@
             <groupId>com.old.silence</groupId>
             <artifactId>silence-job-common-model</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.old.silence</groupId>
-            <artifactId>silence-job-common-util</artifactId>
-        </dependency>
-
         <!-- Original core (for gRPC support) -->
         <dependency>
             <groupId>com.old.silence</groupId>

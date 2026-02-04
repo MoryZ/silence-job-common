@@ -9,7 +9,12 @@ import com.old.silence.job.common.context.SilenceSpringContext;
  * 获取环境信息
  *
  */
-public class EnvironmentUtils {
+public final class EnvironmentUtils {
+
+    private EnvironmentUtils() {
+        throw new AssertionError();
+    }
+
     public static final String DEFAULT_ENV = "default ";
 
     /**

@@ -1,6 +1,10 @@
 package com.old.silence.job.common.util;
 
-public class SilenceJobSystemUtils {
+public final class SilenceJobSystemUtils {
+
+    private SilenceJobSystemUtils() {
+        throw new AssertionError();
+    }
 
     public static String getOsName() {
         return System.getProperty("os.name");

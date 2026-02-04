@@ -16,7 +16,11 @@ import com.old.silence.job.common.constant.SystemConstants;
 import com.old.silence.job.log.SilenceJobLog;
 
 
-public class DingDingUtils {
+public final class DingDingUtils {
+
+    private DingDingUtils() {
+        throw new AssertionError();
+    }
 
     public static final String atLabel = "@{0}";
 

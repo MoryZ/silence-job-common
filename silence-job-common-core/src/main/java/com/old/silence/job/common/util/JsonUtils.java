@@ -36,7 +36,11 @@ import com.old.silence.job.common.exception.SilenceJobCommonException;
 /**
  * @author moryzang
  */
-public class JsonUtils {
+public final class JsonUtils {
+
+    private JsonUtils() {
+        throw new AssertionError();
+    }
 
     /**
      * 将Java对象转JSON 字符串
