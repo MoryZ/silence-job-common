@@ -4,40 +4,690 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e1974e1-e081-4c18-8bc1-3e9e728a651f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/silence-job-common-constant/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/silence-job-common-constant/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/silence-job-common-constant/src/main/java/com/old/silence/job/common/GrpcServerConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/silence-job-common-constant/src/main/java/com/old/silence/job/common/constant/GrpcServerConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/silence-job-common-constant/src/main/java/com/old/silence/job/common/SystemConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/silence-job-common-constant/src/main/java/com/old/silence/job/common/constant/SystemConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/silence-job-common-enum/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/src/main/java/com/old/silence/job/common/enums/RetryTaskStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/silence-job-common-enum/src/main/java/com/old/silence/job/common/enums/RetryTaskStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/silence-job-common-model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/silence-job-common-model/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/src/main/java/com/old/silence/job/common/server/dto/JobLogTaskDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/silence-job-common-server-api/src/main/java/com/old/silence/job/common/server/dto/JobLogTaskDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/src/main/java/com/old/silence/job/common/server/dto/LogTaskDTO.java" beforeDir="false" />
+    <list default="true" id="7e1974e1-e081-4c18-8bc1-3e9e728a651f" name="Changes" comment="r">
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/allclasses-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/allpackages-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/DispatchRetryResultDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/ExecuteResult.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/GenerateRetryIdempotentIdDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/StopJobDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/class-use/DispatchRetryResultDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/class-use/ExecuteResult.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/class-use/GenerateRetryIdempotentIdDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/class-use/StopJobDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/request/DispatchCallbackResultRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/request/DispatchJobRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/request/DispatchJobResultRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/request/DispatchRetryRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/request/DispatchRetryResultRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/request/MapTaskRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/request/RetryCallbackRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/request/RetryCallbackResultRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/request/StopRetryRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/request/class-use/DispatchCallbackResultRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/request/class-use/DispatchJobRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/request/class-use/DispatchJobResultRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/request/class-use/DispatchRetryRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/request/class-use/DispatchRetryResultRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/request/class-use/MapTaskRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/request/class-use/RetryCallbackRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/request/class-use/RetryCallbackResultRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/request/class-use/StopRetryRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/request/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/request/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/com/old/silence/job/common/client/dto/request/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/index-all.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/overview-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/apidocs/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/maven-javadoc-plugin-stale-data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/silence-job-common-client-api-1.8.0-SNAPSHOT-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/silence-job-common-client-api-1.8.0-SNAPSHOT-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-client-api/target/silence-job-common-client-api-1.8.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-constant/target/apidocs/allclasses-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-constant/target/apidocs/allpackages-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-constant/target/apidocs/com/old/silence/job/common/constant/GrpcServerConstants.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-constant/target/apidocs/com/old/silence/job/common/constant/SystemConstants.BEAT.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-constant/target/apidocs/com/old/silence/job/common/constant/SystemConstants.HTTP_PATH.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-constant/target/apidocs/com/old/silence/job/common/constant/SystemConstants.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-constant/target/apidocs/com/old/silence/job/common/constant/class-use/GrpcServerConstants.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-constant/target/apidocs/com/old/silence/job/common/constant/class-use/SystemConstants.BEAT.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-constant/target/apidocs/com/old/silence/job/common/constant/class-use/SystemConstants.HTTP_PATH.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-constant/target/apidocs/com/old/silence/job/common/constant/class-use/SystemConstants.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-constant/target/apidocs/com/old/silence/job/common/constant/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-constant/target/apidocs/com/old/silence/job/common/constant/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-constant/target/apidocs/com/old/silence/job/common/constant/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-constant/target/apidocs/constant-values.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-constant/target/apidocs/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-constant/target/apidocs/index-all.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-constant/target/apidocs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-constant/target/apidocs/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-constant/target/apidocs/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-constant/target/maven-javadoc-plugin-stale-data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-constant/target/silence-job-common-constant-1.8.0-SNAPSHOT-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-constant/target/silence-job-common-constant-1.8.0-SNAPSHOT-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-constant/target/silence-job-common-constant-1.8.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/allclasses-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/allpackages-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/CommonCoreConfigure.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/Alarm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/AlarmContext.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/SilenceJobAlarmFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/attribute/DingDingAttribute.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/attribute/EmailAttribute.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/attribute/LarkAttribute.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/attribute/QiYeWechatAttribute.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/attribute/WebhookAttribute.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/attribute/class-use/DingDingAttribute.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/attribute/class-use/EmailAttribute.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/attribute/class-use/LarkAttribute.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/attribute/class-use/QiYeWechatAttribute.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/attribute/class-use/WebhookAttribute.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/attribute/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/attribute/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/attribute/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/class-use/Alarm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/class-use/AlarmContext.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/class-use/SilenceJobAlarmFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/email/InternalMailUtil.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/email/Mail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/email/MailAccount.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/email/MailException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/email/SilenceJobMailProperties.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/email/UserPassAuthenticator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/email/class-use/InternalMailUtil.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/email/class-use/Mail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/email/class-use/MailAccount.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/email/class-use/MailException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/email/class-use/SilenceJobMailProperties.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/email/class-use/UserPassAuthenticator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/email/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/email/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/email/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/strategy/AbstractAlarm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/strategy/DingdingAlarm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/strategy/EmailAlarm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/strategy/LarkAlarm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/strategy/QiYeWechatAlarm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/strategy/WebhookAlarm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/strategy/class-use/AbstractAlarm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/strategy/class-use/DingdingAlarm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/strategy/class-use/EmailAlarm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/strategy/class-use/LarkAlarm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/strategy/class-use/QiYeWechatAlarm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/strategy/class-use/WebhookAlarm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/strategy/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/strategy/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/alarm/strategy/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/class-use/CommonCoreConfigure.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/constant/GrpcServerConstants.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/constant/SystemConstants.BEAT.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/constant/SystemConstants.HTTP_PATH.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/constant/SystemConstants.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/constant/class-use/GrpcServerConstants.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/constant/class-use/SystemConstants.BEAT.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/constant/class-use/SystemConstants.HTTP_PATH.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/constant/class-use/SystemConstants.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/constant/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/constant/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/constant/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/context/SilenceSpringContext.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/context/class-use/SilenceSpringContext.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/context/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/context/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/context/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/dto/ConfigDTO.Notify.Recipient.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/dto/ConfigDTO.Notify.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/dto/ConfigDTO.Scene.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/dto/ConfigDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/dto/JobLogTaskDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/dto/LogTaskDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/dto/class-use/ConfigDTO.Notify.Recipient.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/dto/class-use/ConfigDTO.Notify.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/dto/class-use/ConfigDTO.Scene.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/dto/class-use/ConfigDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/dto/class-use/JobLogTaskDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/dto/class-use/LogTaskDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/dto/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/dto/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/dto/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/AllocationAlgorithmEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/BackOff.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/BackoffType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/CbTriggerType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/ContentType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/DashboardLineEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/DelayLevelEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/ExecutorType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/ExpressionTypeEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/FailStrategy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/HeadersEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/IdGeneratorMode.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/JobArgsType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/JobBlockStrategy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/JobNotifyScene.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/JobNotifyType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/JobOperationReason.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/JobTaskBatchStatus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/JobTaskExecutorScene.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/JobTaskStatus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/JobTaskType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/MapReduceStage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/NodeType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/NotifyType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/OperationTypeEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/RetryBlockStrategy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/RetryNotifyScene.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/RetryOperationReason.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/RetryResultStatus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/RetryStatus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/RetryTaskExecutorSceneEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/RetryTaskStatus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/RpcType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/SystemModeEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/SystemTaskType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/TaskGeneratorSceneEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/TriggerType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/WorkflowNodeType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/AllocationAlgorithmEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/BackOff.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/BackoffType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/CbTriggerType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/ContentType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/DashboardLineEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/DelayLevelEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/ExecutorType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/ExpressionTypeEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/FailStrategy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/HeadersEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/IdGeneratorMode.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/JobArgsType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/JobBlockStrategy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/JobNotifyScene.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/JobNotifyType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/JobOperationReason.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/JobTaskBatchStatus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/JobTaskExecutorScene.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/JobTaskStatus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/JobTaskType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/MapReduceStage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/NodeType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/NotifyType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/OperationTypeEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/RetryBlockStrategy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/RetryNotifyScene.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/RetryOperationReason.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/RetryResultStatus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/RetryStatus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/RetryTaskExecutorSceneEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/RetryTaskStatus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/RpcType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/SystemModeEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/SystemTaskType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/TaskGeneratorSceneEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/TriggerType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/class-use/WorkflowNodeType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/enums/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/exception/AbstractError.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/exception/BaseSilenceJobException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/exception/SilenceJobAuthenticationException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/exception/SilenceJobCommonException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/exception/SilenceJobInnerExecutorException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/exception/SilenceJobMapReduceException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/exception/SilenceJobRemotingTimeOutException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/exception/class-use/AbstractError.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/exception/class-use/BaseSilenceJobException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/exception/class-use/SilenceJobAuthenticationException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/exception/class-use/SilenceJobCommonException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/exception/class-use/SilenceJobInnerExecutorException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/exception/class-use/SilenceJobMapReduceException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/exception/class-use/SilenceJobRemotingTimeOutException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/exception/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/exception/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/exception/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/expression/ExpressionEngine.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/expression/ExpressionFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/expression/class-use/ExpressionEngine.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/expression/class-use/ExpressionFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/expression/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/expression/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/expression/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/expression/strategy/AbstractExpressionEngine.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/expression/strategy/AviatorExpressionEngine.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/expression/strategy/QLExpressEngine.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/expression/strategy/SpELExpressionEngine.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/expression/strategy/class-use/AbstractExpressionEngine.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/expression/strategy/class-use/AviatorExpressionEngine.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/expression/strategy/class-use/QLExpressEngine.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/expression/strategy/class-use/SpELExpressionEngine.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/expression/strategy/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/expression/strategy/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/expression/strategy/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/grpc/auto/GrpcResult.Builder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/grpc/auto/GrpcResult.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/grpc/auto/GrpcResultOrBuilder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/grpc/auto/GrpcSilenceJobRequest.Builder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/grpc/auto/GrpcSilenceJobRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/grpc/auto/GrpcSilenceJobRequestOrBuilder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/grpc/auto/Metadata.Builder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/grpc/auto/Metadata.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/grpc/auto/MetadataOrBuilder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/grpc/auto/SilenceJobGrpcService.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/grpc/auto/class-use/GrpcResult.Builder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/grpc/auto/class-use/GrpcResult.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/grpc/auto/class-use/GrpcResultOrBuilder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/grpc/auto/class-use/GrpcSilenceJobRequest.Builder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/grpc/auto/class-use/GrpcSilenceJobRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/grpc/auto/class-use/GrpcSilenceJobRequestOrBuilder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/grpc/auto/class-use/Metadata.Builder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/grpc/auto/class-use/Metadata.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/grpc/auto/class-use/MetadataOrBuilder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/grpc/auto/class-use/SilenceJobGrpcService.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/grpc/auto/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/grpc/auto/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/grpc/auto/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/model/ApiResult.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/model/IdempotentIdContext.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/model/JobArgsHolder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/model/JobContext.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/model/MapContext.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/model/SilenceJobHeaders.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/model/SilenceJobRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/model/SilenceJobRpcResult.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/model/class-use/ApiResult.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/model/class-use/IdempotentIdContext.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/model/class-use/JobArgsHolder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/model/class-use/JobContext.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/model/class-use/MapContext.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/model/class-use/SilenceJobHeaders.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/model/class-use/SilenceJobRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/model/class-use/SilenceJobRpcResult.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/model/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/model/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/model/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/rpc/RpcContext.TimeoutCheckTask.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/rpc/RpcContext.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/rpc/SilenceJobFuture.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/rpc/class-use/RpcContext.TimeoutCheckTask.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/rpc/class-use/RpcContext.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/rpc/class-use/SilenceJobFuture.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/rpc/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/rpc/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/rpc/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/util/CronExpression.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/util/DingDingUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/util/EnvironmentUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/util/JsonUtils.JsonMapper.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/util/JsonUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/util/MailUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/util/NetUtil.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/util/SilenceJobSystemUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/util/SilenceJobVersion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/util/StreamUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/util/class-use/CronExpression.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/util/class-use/DingDingUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/util/class-use/EnvironmentUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/util/class-use/JsonUtils.JsonMapper.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/util/class-use/JsonUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/util/class-use/MailUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/util/class-use/NetUtil.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/util/class-use/SilenceJobSystemUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/util/class-use/SilenceJobVersion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/util/class-use/StreamUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/util/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/util/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/util/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/window/LeapArray.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/window/Listener.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/window/WindowWrap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/window/class-use/LeapArray.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/window/class-use/Listener.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/window/class-use/WindowWrap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/window/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/window/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/com/old/silence/job/common/window/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/constant-values.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/deprecated-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/index-all.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/member-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/overview-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/serialized-form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/apidocs/type-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/maven-javadoc-plugin-stale-data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/silence-job-common-core-1.8.0-SNAPSHOT-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/silence-job-common-core-1.8.0-SNAPSHOT-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-core/target/silence-job-common-core-1.8.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/allclasses-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/allpackages-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/AllocationAlgorithmEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/BackOff.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/BackoffType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/CbTriggerType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/ContentType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/DashboardLineEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/DelayLevelEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/ExecutorType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/ExpressionTypeEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/FailStrategy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/HeadersEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/IdGeneratorMode.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/JobArgsType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/JobBlockStrategy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/JobNotifyScene.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/JobNotifyType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/JobOperationReason.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/JobTaskBatchStatus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/JobTaskExecutorScene.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/JobTaskStatus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/JobTaskType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/MapReduceStage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/NodeType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/NotifyType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/OperationTypeEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/RetryBlockStrategy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/RetryNotifyScene.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/RetryOperationReason.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/RetryResultStatus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/RetryStatus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/RetryTaskExecutorSceneEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/RetryTaskStatus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/RpcType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/SystemModeEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/SystemTaskType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/TaskGeneratorSceneEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/TriggerType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/WorkflowNodeType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/AllocationAlgorithmEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/BackOff.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/BackoffType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/CbTriggerType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/ContentType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/DashboardLineEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/DelayLevelEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/ExecutorType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/ExpressionTypeEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/FailStrategy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/HeadersEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/IdGeneratorMode.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/JobArgsType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/JobBlockStrategy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/JobNotifyScene.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/JobNotifyType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/JobOperationReason.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/JobTaskBatchStatus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/JobTaskExecutorScene.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/JobTaskStatus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/JobTaskType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/MapReduceStage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/NodeType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/NotifyType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/OperationTypeEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/RetryBlockStrategy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/RetryNotifyScene.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/RetryOperationReason.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/RetryResultStatus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/RetryStatus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/RetryTaskExecutorSceneEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/RetryTaskStatus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/RpcType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/SystemModeEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/SystemTaskType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/TaskGeneratorSceneEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/TriggerType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/class-use/WorkflowNodeType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/com/old/silence/job/common/enums/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/index-all.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/apidocs/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/maven-javadoc-plugin-stale-data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/silence-job-common-enum-1.8.0-SNAPSHOT-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/silence-job-common-enum-1.8.0-SNAPSHOT-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-enum/target/silence-job-common-enum-1.8.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/allclasses-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/allpackages-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/CommonLogConfigure.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/SilenceJobLog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/class-use/CommonLogConfigure.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/class-use/SilenceJobLog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/constant/LogFieldConstants.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/constant/class-use/LogFieldConstants.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/constant/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/constant/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/constant/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/AbstractLog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/Log.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/class-use/AbstractLog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/class-use/Log.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/console/Console.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/console/ConsoleColorLog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/console/ConsoleColorLogFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/console/ConsoleLog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/console/ConsoleLogFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/console/class-use/Console.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/console/class-use/ConsoleColorLog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/console/class-use/ConsoleColorLogFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/console/class-use/ConsoleLog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/console/class-use/ConsoleLogFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/console/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/console/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/console/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/jdk/JdkLog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/jdk/JdkLogFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/jdk/class-use/JdkLog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/jdk/class-use/JdkLogFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/jdk/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/jdk/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/jdk/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/log4j/Log4jLog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/log4j/Log4jLogFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/log4j/class-use/Log4jLog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/log4j/class-use/Log4jLogFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/log4j/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/log4j/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/log4j/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/log4j2/Log4j2Log.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/log4j2/Log4j2LogFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/log4j2/class-use/Log4j2Log.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/log4j2/class-use/Log4j2LogFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/log4j2/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/log4j2/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/log4j2/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/slf4j/Slf4jLog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/slf4j/Slf4jLogFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/slf4j/class-use/Slf4jLog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/slf4j/class-use/Slf4jLogFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/slf4j/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/slf4j/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dialect/slf4j/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dto/LogContentDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dto/TaskLogFieldDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dto/class-use/LogContentDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dto/class-use/TaskLogFieldDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dto/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dto/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/dto/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/enums/LogTypeEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/enums/class-use/LogTypeEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/enums/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/enums/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/enums/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/factory/GlobalLogFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/factory/LogFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/factory/class-use/GlobalLogFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/factory/class-use/LogFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/factory/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/factory/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/factory/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/lang/Caller.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/lang/LogCaller.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/lang/StackTraceCaller.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/lang/StackWalkerCaller.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/lang/class-use/Caller.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/lang/class-use/LogCaller.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/lang/class-use/StackTraceCaller.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/lang/class-use/StackWalkerCaller.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/lang/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/lang/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/lang/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/level/DebugLog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/level/ErrorLog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/level/InfoLog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/level/Level.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/level/TraceLog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/level/WarnLog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/level/class-use/DebugLog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/level/class-use/ErrorLog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/level/class-use/InfoLog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/level/class-use/Level.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/level/class-use/TraceLog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/level/class-use/WarnLog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/level/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/level/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/level/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/strategy/AbstractLog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/strategy/Local.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/strategy/Remote.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/strategy/class-use/AbstractLog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/strategy/class-use/Local.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/strategy/class-use/Remote.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/strategy/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/strategy/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/com/old/silence/job/log/strategy/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/constant-values.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/index-all.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/overview-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/apidocs/serialized-form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/maven-javadoc-plugin-stale-data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/silence-job-common-log-1.8.0-SNAPSHOT-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/silence-job-common-log-1.8.0-SNAPSHOT-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-log/target/silence-job-common-log-1.8.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/allclasses-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/allpackages-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/com/old/silence/job/common/context/SilenceSpringContext.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/com/old/silence/job/common/context/class-use/SilenceSpringContext.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/com/old/silence/job/common/context/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/com/old/silence/job/common/context/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/com/old/silence/job/common/context/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/com/old/silence/job/common/dto/ConfigDTO.Notify.Recipient.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/com/old/silence/job/common/dto/ConfigDTO.Notify.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/com/old/silence/job/common/dto/ConfigDTO.Scene.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/com/old/silence/job/common/dto/ConfigDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/com/old/silence/job/common/dto/JobLogTaskDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/com/old/silence/job/common/dto/LogTaskDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/com/old/silence/job/common/dto/class-use/ConfigDTO.Notify.Recipient.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/com/old/silence/job/common/dto/class-use/ConfigDTO.Notify.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/com/old/silence/job/common/dto/class-use/ConfigDTO.Scene.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/com/old/silence/job/common/dto/class-use/ConfigDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/com/old/silence/job/common/dto/class-use/JobLogTaskDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/com/old/silence/job/common/dto/class-use/LogTaskDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/com/old/silence/job/common/dto/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/com/old/silence/job/common/dto/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/com/old/silence/job/common/dto/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/index-all.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/overview-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/apidocs/serialized-form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/maven-javadoc-plugin-stale-data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/silence-job-common-model-1.8.0-SNAPSHOT-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/silence-job-common-model-1.8.0-SNAPSHOT-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-model/target/silence-job-common-model-1.8.0-SNAPSHOT.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/src/main/java/com/old/silence/job/common/server/dto/RetryLogTaskDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/silence-job-common-server-api/src/main/java/com/old/silence/job/common/server/dto/RetryLogTaskDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/silence-job-common-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/silence-job-common-util/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/silence-job-common-util/src/main/java/com/old/silence/job/common/util/DingDingUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/silence-job-common-util/src/main/java/com/old/silence/job/common/util/DingDingUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/apidocs/allclasses-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/apidocs/allpackages-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/apidocs/com/old/silence/job/common/server/dto/CallbackParamsDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/apidocs/com/old/silence/job/common/server/dto/ConfigDTO.Notify.Recipient.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/apidocs/com/old/silence/job/common/server/dto/ConfigDTO.Notify.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/apidocs/com/old/silence/job/common/server/dto/ConfigDTO.Scene.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/apidocs/com/old/silence/job/common/server/dto/ConfigDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/apidocs/com/old/silence/job/common/server/dto/JobLogTaskDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/apidocs/com/old/silence/job/common/server/dto/RetryLogTaskDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/apidocs/com/old/silence/job/common/server/dto/RetryTaskDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/apidocs/com/old/silence/job/common/server/dto/class-use/CallbackParamsDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/apidocs/com/old/silence/job/common/server/dto/class-use/ConfigDTO.Notify.Recipient.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/apidocs/com/old/silence/job/common/server/dto/class-use/ConfigDTO.Notify.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/apidocs/com/old/silence/job/common/server/dto/class-use/ConfigDTO.Scene.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/apidocs/com/old/silence/job/common/server/dto/class-use/ConfigDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/apidocs/com/old/silence/job/common/server/dto/class-use/JobLogTaskDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/apidocs/com/old/silence/job/common/server/dto/class-use/RetryLogTaskDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/apidocs/com/old/silence/job/common/server/dto/class-use/RetryTaskDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/apidocs/com/old/silence/job/common/server/dto/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/apidocs/com/old/silence/job/common/server/dto/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/apidocs/com/old/silence/job/common/server/dto/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/apidocs/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/apidocs/index-all.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/apidocs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/apidocs/member-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/apidocs/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/apidocs/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/apidocs/serialized-form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/classes/com/old/silence/job/common/server/dto/RetryLogTaskDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/silence-job-common-server-api/target/classes/com/old/silence/job/common/server/dto/RetryLogTaskDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/maven-javadoc-plugin-stale-data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/silence-job-common-server-api-1.8.0-SNAPSHOT-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/silence-job-common-server-api-1.8.0-SNAPSHOT-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/silence-job-common-server-api/target/silence-job-common-server-api-1.8.0-SNAPSHOT.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "MoryZ"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MoryZ&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/MoryZ/silence-job-common.git",
-    "accountId": "b0c69970-af70-4e8b-9af3-85265450b6d1"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MoryZ/silence-job-common.git&quot;,
+    &quot;accountId&quot;: &quot;b0c69970-af70-4e8b-9af3-85265450b6d1&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -48,39 +698,46 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="39CHdJxRKIvrimKlSvHWydnTUXx" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="flattenModules" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.silence-job-common [clean].executor": "Run",
-    "Maven.silence-job-common [compile].executor": "Run",
-    "Maven.silence-job-common [install].executor": "Run",
-    "Maven.silence-job-common-constant [install].executor": "Run",
-    "Maven.silence-job-common-enum [install].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.silence-job-common [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.silence-job-common [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.silence-job-common [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.silence-job-common-constant [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.silence-job-common-enum [install].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -96,11 +753,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1765507421616</updated>
-      <workItem from="1770193220025" duration="2155000" />
+      <workItem from="1770193220025" duration="8864000" />
+      <workItem from="1773729325962" duration="1607000" />
     </task>
+    <task id="LOCAL-00001" summary="r">
+      <option name="closed" value="true" />
+      <created>1770210884917</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1770210884917</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="r" />
+    <option name="LAST_COMMIT_MESSAGE" value="r" />
   </component>
 </project>
