@@ -2,9 +2,27 @@ package com.old.silence.job.common.server.dto;
 
 
 import java.math.BigInteger;
+import java.util.List;
+
+import com.old.silence.job.log.dto.TaskLogFieldDTO;
 
 
 public class JobLogTaskDTO {
+
+    /**
+     * 日志类型
+     */
+    private String logType;
+
+    /**
+     * 命名空间
+     */
+    private String namespaceId;
+
+    /**
+     * 组名称
+     */
+    private String groupName;
 
     /**
      * 任务信息id
@@ -20,6 +38,40 @@ public class JobLogTaskDTO {
      * 调度任务id
      */
     private BigInteger taskId;
+
+    /**
+     * 上报时间
+     */
+    private Long realTime;
+
+    /**
+     * 日志模型集合
+     */
+    private List<TaskLogFieldDTO> fieldList;
+
+    public String getLogType() {
+        return logType;
+    }
+
+    public void setLogType(String logType) {
+        this.logType = logType;
+    }
+
+    public String getNamespaceId() {
+        return namespaceId;
+    }
+
+    public void setNamespaceId(String namespaceId) {
+        this.namespaceId = namespaceId;
+    }
+
+    public String getGroupName() {
+        return groupName;
+    }
+
+    public void setGroupName(String groupName) {
+        this.groupName = groupName;
+    }
 
     public BigInteger getJobId() {
         return jobId;
@@ -43,5 +95,21 @@ public class JobLogTaskDTO {
 
     public void setTaskId(BigInteger taskId) {
         this.taskId = taskId;
+    }
+
+    public Long getRealTime() {
+        return realTime;
+    }
+
+    public void setRealTime(Long realTime) {
+        this.realTime = realTime;
+    }
+
+    public List<TaskLogFieldDTO> getFieldList() {
+        return fieldList;
+    }
+
+    public void setFieldList(List<TaskLogFieldDTO> fieldList) {
+        this.fieldList = fieldList;
     }
 }
