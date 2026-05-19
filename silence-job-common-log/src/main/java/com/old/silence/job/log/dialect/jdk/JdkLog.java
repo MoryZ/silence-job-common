@@ -14,7 +14,7 @@ import static com.old.silence.job.log.factory.LogFactory.extractThrowable;
 /**
  * <a href="http://java.sun.com/javase/6/docs/technotes/guides/logging/index.html">java.util.logging</a> log.
  *
- * @author wodeyangzipingpingwuqi
+ * @author moryzang
  */
 public class JdkLog extends AbstractLog {
 

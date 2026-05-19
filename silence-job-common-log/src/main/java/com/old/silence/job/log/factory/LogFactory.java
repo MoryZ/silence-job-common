@@ -17,7 +17,7 @@ import com.old.silence.job.log.dialect.jdk.JdkLogFactory;
 /**
  * 日志工厂类
  *
- * @author wodeyangzipingpingwuqi
+ * @author moryzang
  */
 public abstract class LogFactory {
 

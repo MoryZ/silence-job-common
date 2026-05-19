@@ -6,7 +6,7 @@ import com.old.silence.job.log.factory.LogFactory;
 /**
  * <a href="http://logging.apache.org/log4j/2.x/index.html">Apache Log4J 2</a> log.<br>
  *
- * @author wodeyangzipingpingwuqi
+ * @author moryzang
  */
 public class Log4j2LogFactory extends LogFactory {
 

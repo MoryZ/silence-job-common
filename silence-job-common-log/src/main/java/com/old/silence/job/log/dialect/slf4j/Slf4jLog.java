@@ -16,7 +16,7 @@ import static com.old.silence.job.log.factory.LogFactory.extractThrowable;
  * <a href="http://www.slf4j.org/">SLF4J</a> log.<br>
  * 同样无缝支持 <a href="http://logback.qos.ch/">LogBack</a>
  *
- * @author wodeyangzipingpingwuqi
+ * @author moryzang
  */
 public class Slf4jLog extends AbstractLog {
     private static final long serialVersionUID = -6843151523380063975L;
@@ -204,7 +204,7 @@ public class Slf4jLog extends AbstractLog {
     /**
      * 设置MDC上下文
      *
-     * @param remote
+     * @param remote 是否远程
      */
     private void setContextMap(Boolean remote) {
         if (remote) {

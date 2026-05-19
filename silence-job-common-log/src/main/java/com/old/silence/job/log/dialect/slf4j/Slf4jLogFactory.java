@@ -13,7 +13,7 @@ import com.old.silence.job.log.factory.LogFactory;
  * <a href="http://www.slf4j.org/">SLF4J</a> log.<br>
  * 同样无缝支持 <a href="http://logback.qos.ch/">LogBack</a>
  *
- * @author wodeyangzipingpingwuqi
+ * @author moryzang
  */
 public class Slf4jLogFactory extends LogFactory {
 

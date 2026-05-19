@@ -3,7 +3,7 @@ package com.old.silence.job.log.level;
 /**
  * 日志等级
  *
- * @author wodeyangzipingpingwuqi
+ * @author moryzang
  */
 public enum Level {
     /**

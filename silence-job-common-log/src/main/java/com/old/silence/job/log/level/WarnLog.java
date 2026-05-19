@@ -3,7 +3,7 @@ package com.old.silence.job.log.level;
 /**
  * WARN级别日志接口
  *
- * @author wodeyangzipingpingwuqi
+ * @author moryzang
  */
 public interface WarnLog {
 

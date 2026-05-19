@@ -8,7 +8,7 @@ import com.old.silence.job.log.dialect.slf4j.Slf4jLogFactory;
  * 全局日志工厂类<br>
  * 用于减少日志工厂创建，减少日志库探测
  *
- * @author wodeyangzipingpingwuqi
+ * @author moryzang
  */
 public class GlobalLogFactory {
 

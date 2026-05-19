@@ -6,7 +6,7 @@ import com.old.silence.job.log.factory.LogFactory;
 /**
  * 利用System.out.println()打印彩色日志
  *
- * @author wodeyangzipingpingwuqi
+ * @author moryzang
  */
 public class ConsoleColorLogFactory extends LogFactory {
 

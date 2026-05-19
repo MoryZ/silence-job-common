@@ -15,7 +15,7 @@ import org.apache.commons.lang3.StringUtils;
  * 命令行（控制台）工具方法类<br>
  * 此类主要针对{@link System#out} 和 {@link System#err} 做封装。
  *
- * @author wodeyangzipingpingwuqi
+ * @author moryzang
  */
 public class Console {
 
@@ -37,8 +37,7 @@ public class Console {
      * @param obj 要打印的对象
      */
     public static void log(Object obj) {
-        if (obj instanceof Throwable) {
-            final Throwable e = (Throwable) obj;
+        if (obj instanceof Throwable e) {
             log(e, e.getMessage());
         } else {
             log(TEMPLATE_VAR, obj);
@@ -206,8 +205,7 @@ public class Console {
      * @param obj 要打印的对象
      */
     public static void error(Object obj) {
-        if (obj instanceof Throwable) {
-            Throwable e = (Throwable) obj;
+        if (obj instanceof Throwable e) {
             error(e, e.getMessage());
         } else {
             error(TEMPLATE_VAR, obj);
@@ -297,7 +295,7 @@ public class Console {
      * 返回当前位置+行号 (不支持Lambda、内部类、递归内使用)
      *
      * @return 返回当前行号
-     * @author dahuoyzs
+     * @author moryzang
      * @since 5.2.5
      */
     public static String where() {

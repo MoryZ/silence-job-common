@@ -3,9 +3,7 @@ package com.old.silence.job.log.dto;
 import java.io.Serializable;
 
 /**
- * @author wodeyangzipingpingwuqi
- * @version 2.6.0
- * @date 2023/12/27
+ * @author moryzang
  */
 public class TaskLogFieldDTO implements Serializable {
 

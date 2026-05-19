@@ -9,7 +9,7 @@ import com.old.silence.core.context.CommonErrors;
 /**
  * 通过StackTrace方式获取调用者。此方式效率最低，不推荐使用
  *
- * @author wodeyangzipingpingwuqi
+ * @author moryzang
  */
 public class StackTraceCaller implements Caller, Serializable {
     private static final long serialVersionUID = 1L;

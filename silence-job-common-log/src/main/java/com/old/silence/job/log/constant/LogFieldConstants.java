@@ -1,9 +1,7 @@
 package com.old.silence.job.log.constant;
 
 /**
- * @author wodeyangzipingpingwuqi
- * @date 2023-12-27
- * @since 2.6.0
+ * @author moryzang
  */
 public interface LogFieldConstants {
 

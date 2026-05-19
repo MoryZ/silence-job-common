@@ -12,7 +12,7 @@ import com.old.silence.job.log.factory.LogFactory;
  * JDK日志工厂类
  * <a href="http://java.sun.com/javase/6/docs/technotes/guides/logging/index.html">java.util.logging</a> log.
  *
- * @author wodeyangzipingpingwuqi
+ * @author moryzang
  */
 public class JdkLogFactory extends LogFactory {
 

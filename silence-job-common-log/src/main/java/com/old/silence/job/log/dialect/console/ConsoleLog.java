@@ -12,7 +12,7 @@ import com.old.silence.job.log.level.Level;
 /**
  * 利用System.out.println()打印日志
  *
- * @author wodeyangzipingpingwuqi
+ * @author moryzang
  */
 public class ConsoleLog extends AbstractLog {
 

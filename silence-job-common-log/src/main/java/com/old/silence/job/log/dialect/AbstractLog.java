@@ -9,7 +9,7 @@ import com.old.silence.job.log.level.Level;
 /**
  * 抽象日志类<br> 实现了一些通用的接口
  *
- * @author wodeyangzipingpingwuqi
+ * @author moryzang
  */
 public abstract class AbstractLog implements Log, Serializable {
 

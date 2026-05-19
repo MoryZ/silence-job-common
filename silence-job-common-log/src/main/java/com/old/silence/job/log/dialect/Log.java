@@ -13,7 +13,7 @@ import com.old.silence.job.log.level.WarnLog;
 /**
  * 日志统一接口
  *
- * @author wodeyangzipingpingwuqi
+ * @author moryzang
  */
 public interface Log extends TraceLog, DebugLog, InfoLog, WarnLog, ErrorLog {
 
